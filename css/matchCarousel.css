@@ -1,0 +1,361 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700italic,700,400italic,300italic,300,600italic,800,800italic,600);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#width-870 {
+    max-width: 870px;
+    width: 100%;
+}
+
+#width450 {
+    max-width: 450px;
+    width: 100%;
+    border: 1px solid black;
+    height: 50px;
+}
+
+#width320 {
+    max-width: 320px;
+    width: 100%;
+    border: 1px solid black;
+    height: 50px;
+}
+
+.width-40 {
+    width: 39%;
+}
+
+.width-20 {
+    width: 19%;
+}
+
+.inline-block {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+#match-context {
+    min-height: 75px;
+    padding-bottom: 20px;
+    background-color: #99cc33;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#tournament-name {
+    font-size: 25px;
+    font-weight: 900;
+    padding-top: 20px;
+    color: #fff;
+    min-width: 50px;
+}
+
+#progress-bar-full {
+    height: 15px;
+    width: 65%;
+    background-color: #669900;
+    position: relative;
+}
+
+#progress-bar-empty {
+    height: 15px;
+    background-color: #ccff99;
+}
+
+#bottom-bar {
+    height: 15px;
+    background-color: #99cc33;
+}
+
+#match-info {
+    min-height: 490px;
+    width: 100%;
+    border-right: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    border-left: 1px solid #d3d3d3;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#match-environment {
+    height: 75px;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.match-environment-title {
+    font-weight: 100;
+}
+
+#match-time-location-wrapper {
+    text-align: left;
+}
+
+#match-attendance-wrapper {
+    text-align: center;
+    vertical-align: top;
+}
+
+#match-weather-wrapper {
+    text-align: right;
+    vertical-align: top;
+}
+
+#match-time-location,
+#match-attendance,
+#match-weather {
+    font-weight: 400;
+}
+
+#match-teams {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#home-team-name,
+#away-team-name {
+    width: 100%;
+    font-size: 42px;
+    font-weight: 100;
+    vertical-align: top;
+    word-wrap: break-word;
+}
+
+#away-team-logo,
+#home-team-logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#home-team-logo {
+    content: url("../images/mad-icon-big.png");
+}
+
+#away-team-logo {
+    content: url("../images/wol-icon-big.png");
+}
+
+#result-wrapper {
+    position: relative;
+    bottom: -34px;
+}
+
+#result {
+    font-size: 50px;
+    font-weight: 900;
+    vertical-align: bottom;
+
+}
+
+#match-leaders {
+    margin-top: 30px;
+    padding-bottom: 60px;
+}
+
+#match-leaders .inline-block {
+    vertical-align: top;
+}
+
+#home-manager-title,
+#away-manager-title,
+#referee-title {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#home-manager-name,
+#away-manager-name,
+#referee-name {
+    font-size: 21px;
+    font-weight: 100;
+}
+
+.list-group {
+
+    text-align: center;
+
+}
+
+.list-group-item {
+
+    display: inline-block;
+    max-width: 300px;
+
+}
+
+@media only screen and (min-width: 450px) {
+    #match-environment-middle {
+        display: none;
+    }
+
+    #match-environment-top {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    #match-environment,
+    #match-leaders {
+        display: none;
+    }
+
+    #match-context {
+        min-height: 20px;
+        padding-bottom: 10px;
+    }
+
+    #tournament-name {
+        font-size: 21px;
+        font-weight: 700;
+        padding-top: 10px;
+    }
+
+    #progress-bar-full {
+        height: 8px;
+    }
+
+    #progress-bar-empty {
+        height: 8px;
+    }
+
+    #bottom-bar {
+        height: 8px;
+    }
+
+    #match-info {
+        min-height: 210px;
+    }
+
+    #match-teams {
+        padding-bottom: 35px;
+    }
+
+    #home-team-name,
+    #away-team-name {
+        font-size: 23px;
+    }
+
+    #result-wrapper {
+        position: relative;
+        bottom: -10px;
+    }
+
+    #result {
+        font-size: 28px;
+        vertical-align: baseline;
+    }
+
+    #home-team-logo {
+        /*content: url("../images/mad-icon-small.png");*/
+        padding-bottom: 15px;
+    }
+
+    #away-team-logo {
+        /*
+        content: url("../images/wol-icon-small.png");
+        */
+        padding-bottom: 15px;
+    }
+
+    #match-environment-middle {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.8;
+        display: block;
+        position: relative;
+        top: -15px;
+    }
+
+    #match-environment-top {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    #match-context {
+        min-height: 10px;
+        padding-bottom: 8px;
+    }
+
+    #tournament-name {
+        font-size: 17px;
+        font-weight: 700;
+        padding-top: 8px;
+    }
+
+    #match-info {
+        min-height: 50px;
+    }
+
+    #progress-bar-full {
+        height: 6px;
+    }
+
+    #progress-bar-empty {
+        height: 6px;
+    }
+
+    #bottom-bar {
+        height: 6px;
+    }
+
+    #match-environment-middle {
+        display: none;
+    }
+
+    #match-environment-top {
+        color: #fff;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    #match-date-wrapper {
+        text-align: left;
+    }
+
+    #match-time-wrapper {
+        text-align: right;
+    }
+
+    #home-team-logo,
+    #away-team-logo{
+        border:1px solid #000;
+        display: none;
+    }
+
+    #result {
+        vertical-align: -25%;
+    }
+
+    #match-teams{
+        padding-bottom: 18px;
+    }
+
+}
